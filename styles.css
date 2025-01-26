@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+:root {
+    --bg-size: 100% 100%;
+    --main_color: #fff;
+    --title: 'Josefin Sans', sans-serif;
+    --font-para: 'David Libre', serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+* {
+    font-family: var(--font-para);
+}
+
+
+/* Comment Section */
+#comment-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.comment-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#user-name, #user-comment {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#user-name:focus, #user-comment:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#comments-display {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.comment strong {
+    font-size: 16px;
+    color: #007BFF;
+}
+
+ 
+html {
+    font-size: 62.5%;
+}
+/* Popular Posts */
+.popular-posts-section .row {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.h1{
+    text-align: center;
+
+}
+.h4{
+    text-align: center;
+
+}
+.popular-post-img {
+    width: 100%;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    
+}
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab,
+.fas {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+
+.main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: #000;
+}
+
+.main_heading__para {
+    font-size: 2.2rem;
+}
+
+.main_header__div {
+    height: calc(100vh - 40vh);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0)), url('https://tse3.mm.bing.net/th?id=OIP.VeWB7grUAMMj6KWeYYpemwHaE8&pid=Api&P=0&h=180');
+    background-size: var(--bg-size);
+}
+
+.main_header__div p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--title);
+    color: var(--main_color);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+.p-4 {
+    padding: 1.5rem !important;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+p{
+    color: rgb(113, 20, 219);
+}
+u{
+    color: rgb(216, 23, 29);
+}
+h1{
+    color: rgb(179, 15, 179);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:rgba(0, 0, 0, .125);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, .125);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+.card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, .125);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+.main_header__div h2 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main_color);
+    padding-bottom: 2rem;
+    transition: var(--eff);
+}
+
+.main_header__div span {
+    font-family: var(--title);
+}
+
+.animateWord div {
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+
+.animateWord div li {
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+
+/* Wrapper to keep alignment and allow scrolling */
+.flip4-wrapper {
+    height: 100px; /* Fixed height for visible area */
+    overflow: hidden; /* Hide content outside visible area */
+    position: relative; /* Keeps the content inside */
+}
+
+/* List for the animation */
+.flip4 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto; /* Adjust to fit content */
+    animation: flip4 15s infinite; /* Infinite scrolling effect */
+    display: flex; /* Horizontal layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Each item in the list */
+.flip4 li {
+    font-size: 1.2em;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 20px; /* Vertically center text */
+}
+/* Style for the comment box */
+textarea {
+    background-color: #ffffff; /* White background for better visibility */
+    color: #0ebadc; /* Black text for good contrast */
+    border: 1px solid #ccc; /* Light border for better separation */
+    padding: 10px; /* Add some padding for readability */
+    border-radius: 5px; /* Rounded corners for a nice look */
+    width: 100%; /* Make it responsive */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+/* Keyframes for smooth one-way scrolling */
+@keyframes flip4 {
+    0% {
+        transform: translateY(0%); /* Start from the top */
+    }
+    25% {
+        transform: translateY(-100%); /* Move 1st item out of view */
+    }
+    50% {
+        transform: translateY(-200%); /* Move 2nd item out of view */
+    }
+    75% {
+        transform: translateY(-300%); /* Move 3rd item out of view */
+    }
+    100% {
+        transform: translateY(-300%); /* Keep at last item */
+    }
+}
+
+
+.main_header__div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+
+.main_header__div button:hover,
+figure img:hover,
+.left_div__reply:hover,
+.left_div__like:hover,
+.subs_btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+/*left side vblog style start*/
+.blog_left__div h1 {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blog_left__div .blog_title {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div .blog_title span {
+    color: #1b262c;
+}
+
+.blog_left__div p span {
+    color: #1b262c;
+}
+
+.left_div_btns {
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+h1{
+    padding-left: 110px;
+    padding-bottom:30px;
+}
+p{
+    text-align: center;
+}
+b{
+    padding-left: 140px;
+}
+h2{
+    text-align: center;
+}
+.left_div__like {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+
+.left_div__reply {
+    color: var(--btn-font-color);
+    /*border-width: .2rem;*/
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+
+.replies {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
+}
+
+.saswata_blog {
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+}
+
+/*right sdie div style start*/
+.about_me_div {
+    width: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(208, 206, 207, 0.8) 50%), url('../images/thapa.jpg');
+    background-size: var(--bg-size);
+}
+
+.about_me_div p:first-child {
+    padding-bottom: 0.2rem;
+    font-size: 2.2rem;
+}
+
+.about_me_div p {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    color: #000;
+}
+
+.right_div__title {
+    background: #d0cecf;
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+.right_div__title h2 {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+.popular_post__img1 {
+    background-size: var(--bg-size);
+}
+
+.popular_post__img2 {
+    
+    background-size: var(--bg-size);
+}
+
+.popular_post__img3 {
+    
+    background-size: var(--bg-size);
+}
+
+.popular_post__img4 {
+    
+    background-size: var(--bg-size);
+}
+
+.right_sub__div {
+    background: #fff;
+    padding: 2.5rem 1rem;
+}
+
+.right_sub__div .row {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.right_sub__div .row:last-child {
+    margin-bottom: 0;
+}
+
+.row>.right_div_post {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Tags Box Styles */
+.tags-box {
+    border: 1px solid #ddd;  /* Optional: add border to the whole box */
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.tags_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+    grid-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.tags_main a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tags_main a:hover {
+    background-color: #007bff;  /* Change to your desired hover color */
+    color: white;  /* You can change the font color on hover if needed */
+}
+
+
+
+/*adverstisment*/
+.advertise_img {
+    min-width: 10rem;
+    height: 20rem;
+    display: grid;
+    place-items: center;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.NnW5lGui-RiD0fOJw6Iw0QHaD4&pid=Api&P=0&h=180");
+}
+
+.advertise_btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.advertise_btn:hover {
+    background-color: #0056b3;
+}
+
+/*left side icons*/
+.fab {
+    color: #000;
+}
+
+.fab:hover {
+    color: #d0cecf;
+    transform: rotate(360deg);
+}
+
+/*right Subscribe  style*/
+.right_sub__div #exampleInputEmail1 {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+.subs_btn {
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    display: block;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color:violet;
+}
+.bg-light {
+    background-color: #212529 !important;
+}

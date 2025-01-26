@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Saswata Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="text-uppercase main_heading">Saswata Blog Life</h1>
+            <p class="main_heading__para"><span class="text-capitalize bg-dark text-white py-2 px-3">Welcome to my Blog Life</span></p>
+        </div>
+        <div class="main_header__div d-flex align-items-start justify-content-center flex-column shadow pl-5">
+            <p>Saswata Blog</p>
+            <h2 class="animateWord">
+                <span>I am</span>
+                <div class="flip4-wrapper">
+                    <ul class="flip4">
+                        <li>a Instagram Lover</li>
+                        <li>a Youtuber Lover</li>
+                        <li>a Facebook Lover</li>
+                    </ul>
+                </div>
+            </h2>
+
+        </div>
+
+    </header>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-xl-10  col-lg-10 col-md-12 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                        <div class="row gy-5 ">
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                    <h1 class="text-uppercase">Best Blog Life in 2022</h1>
+                                    <p class="blog_title"> <span class="font-weight-bold">Summary of Blog Life Span</span> Dec 31, 2022 </p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img width="1000px" src="https://tse1.mm.bing.net/th?id=OIP.sCtdNjphAin-gugu0MNptAHaEK&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold"><u>Saswata Youtube Blog Life:-</u></span><br>Welcome to Saswata Youtube Blog Life, your one-stop destination for creativity, knowledge, and entertainment. This blog is a reflection of a journey filled with passion, learning, and sharing insights that matter. Whether you're here to discover new ideas, explore inspiring stories, or simply stay updated with trending topics, you're in the right place. From behind-the-scenes moments of a YouTube creator's life to tips on personal growth and content creation, we cover it all. Dive into the world of engaging articles, tutorials, and experiences designed to motivate and educate. Here, every blog post is crafted with the intention to ignite curiosity and spark a sense of connection with our audience. Join us in exploring a world where every idea takes flight, every story finds its voice, and every reader becomes a part of our community. Saswata Youtube Blog Life is more than a blog—it's a movement to inspire, connect, and grow together. Let’s embrace this journey and make every moment count! 
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn1" onclick="toggleLike()">Like</button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" id="reply_btn_1">Replies</button>
+                                    </div>
+                                </div>
+
+                                <div class="replies" id="reply1" style="display:none;">
+                                    <div id="comments-display-1"></div> 
+                                    <div class="mt-3">
+                                        <input type="text" id="user-name-1" placeholder="Enter your name..." />
+                                        <textarea id="user-comment-1" placeholder="Add your comment..."></textarea>
+                                        <button onclick="addComment(1)">Add Comment</button>
+                                    </div>
+                                </div>
+                            <div class="col-12 card1 p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                    <h1 class="text-uppercase">Best Blog Life in 2023</h1>
+                                    <p class="blog_title"> <span class="font-weight-bold">Summary of Blog Life Span</span> Dec 31, 2023 </p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img width="1000px" src="https://tse3.mm.bing.net/th?id=OIP.qHpZqT1g2_CPO3S144ZcpgHaEf&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold"><u>Saswata Facebook Blog Life:-</u></span><br>Welcome to Saswata Facebook Blog Life, your one-stop destination for creativity, knowledge, and entertainment. This blog is a reflection of a journey filled with passion, learning, and sharing insights that matter. Whether you're here to discover new ideas, explore inspiring stories, or simply stay updated with trending topics, you're in the right place. From behind-the-scenes moments of a YouTube creator's life to tips on personal growth and content creation, we cover it all. Dive into the world of engaging articles, tutorials, and experiences designed to motivate and educate. Here, every blog post is crafted with the intention to ignite curiosity and spark a sense of connection with our audience. Join us in exploring a world where every idea takes flight, every story finds its voice, and every reader becomes a part of our community. Saswata Youtube Blog Life is more than a blog—it's a movement to inspire, connect, and grow together. Let’s embrace this journey and make every moment count! 
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn2" onclick="toggleLike1()">Like</button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" id="reply_btn_2">Replies</button>
+                                    </div>
+                                </div>
+
+                                <div class="replies" id="reply2" style="display:none;">
+                                    <div id="comments-display-2"></div> 
+                                    <div class="mt-3">
+                                        <input type="text" id="user-name-2" placeholder="Enter your name..." />
+                                        <textarea id="user-comment-2" placeholder="Add your comment..."></textarea>
+                                        <button onclick="addComment(2)">Add Comment</button>
+                                    </div>
+                                </div>
+                                
+                            <div class="col-12 card2 p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5 ">
+                                    <h1 class="text-uppercase">Best Blog Life in 2024</h1>
+                                    <p class="blog_title"> <span class="font-weight-bold">Summary of Blog Life Span</span> Dec 31, 2024 </p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img width="1000px" src="https://tse3.mm.bing.net/th?id=OIP.LejSI5R_3WslIfTRx32gEQHaEK&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold"><u>Saswata Instagram Blog Life:-</u></span><br>Welcome to Saswata Instagram Blog Life, your one-stop destination for creativity, knowledge, and entertainment. This blog is a reflection of a journey filled with passion, learning, and sharing insights that matter. Whether you're here to discover new ideas, explore inspiring stories, or simply stay updated with trending topics, you're in the right place. From behind-the-scenes moments of a YouTube creator's life to tips on personal growth and content creation, we cover it all. Dive into the world of engaging articles, tutorials, and experiences designed to motivate and educate. Here, every blog post is crafted with the intention to ignite curiosity and spark a sense of connection with our audience. Join us in exploring a world where every idea takes flight, every story finds its voice, and every reader becomes a part of our community. Saswata Youtube Blog Life is more than a blog—it's a movement to inspire, connect, and grow together. Let’s embrace this journey and make every moment count! 
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn" onclick="toggleLike2()">Like</button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" id="reply_btn_3">Replies</button>
+                                    </div>
+                                </div>
+
+                                <div class="replies" id="reply3" style="display:none;">
+                                    <div id="comments-display-3"></div> 
+                                    <div class="mt-3">
+                                        <input type="text" id="user-name-3" placeholder="Enter your name..." />
+                                        <textarea id="user-comment-3" placeholder="Add your comment..."></textarea>
+                                        <button onclick="addComment(3)">Add Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+    <!-- About Me Section -->
+    <div class="about-me-section shadow p-4 mb-5 rounded bg-white">
+        <p class="about-title font-weight-bold mb-2">Saswata Banerjee</p>
+        <p class="about-description text-muted">
+            Just me, myself, and I, exploring the universe of the unknown. I have a heart full of love and a passion for Social Media blogging. I want to share my world with you.
+        </p>
+    </div>
+
+    <div class="popular-posts-section mb-5">
+        <div class="section-title py-3 px-2 bg-primary text-white rounded">
+            <h2>Popular Posts</h2>
+        </div>
+        <div class="popular-posts-content shadow p-3 bg-white rounded">
+            <div class="row align-items-center mb-3">
+                
+                <div class="col-9">
+                    <h4 class="post-title font-weight-bold mb-1 text-center">Bill Gates</h4>
+                    <p class="post-subtitle text-muted text-center"><h1>CEO, Microsoft</h1></p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3">
+                
+                <div class="col-9">
+                    <h4 class="post-title font-weight-bold mb-1 text-center">Mark Zuckerberg</h4>
+                    <p class="post-subtitle text-muted text-center"><h1>Programmer</h1></p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                
+                <div class="col-9">
+                    <h4 class="post-title font-weight-bold mb-1">Jeff Bezos</h4>
+                    <p class="post-subtitle text-muted text-center"><h1>Amazon</h1></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advertise Section -->
+    <div class="advertise-section mb-5">
+        <div class="section-title py-3 px-2 bg-primary text-white rounded">
+            <h2>Advertise</h2>
+        </div>
+        <div class="advertise-content shadow p-3 bg-white rounded">
+            <div class="advertise-img bg-light rounded text-center p-3">
+                <img src="https://img.freepik.com/free-photo/full-shot-woman-reading-with-smartphone_23-2149629602.jpg?ga=GA1.1.2088428254.1737862602&semt=ais_hybrid" alt="Advertisement" class="img-fluid rounded">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Tags Section -->
+<div class="tags-box mb-5">
+    <div class="section-title py-3 px-2 bg-primary text-white rounded">
+        <h2>Tags</h2>
+    </div>
+    <div class="tags-content shadow p-3 bg-white rounded">
+        <div class="tags_main">
+            <a href="#" class="badge badge-primary text-white">HTML</a>
+            <a href="#" class="badge badge-secondary text-white">CSS</a>
+            <a href="#" class="badge badge-success text-white">JavaScript</a>
+            <a href="#" class="badge badge-info text-white">React</a>
+            <a href="#" class="badge badge-warning text-white">Vue</a>
+            <a href="#" class="badge badge-danger text-white">PHP</a>
+            <a href="#" class="badge badge-dark text-white">Python</a>
+            <a href="#" class="badge badge-primary text-white">Kotlin</a>
+            <a href="#" class="badge badge-secondary text-white">C++</a>
+            <a href="#" class="badge badge-success text-white">Java</a>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Inspiration</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <figure>
+                                                <img width="600px" src="https://tse2.mm.bing.net/th?id=OIP.IPI3q1W0AmU4sUx6NHb9VwHaFc&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img width="600px" src="https://tse2.mm.bing.net/th?id=OIP.pR95N_2UClUxYiB7CmTO8wHaFc&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://tse2.mm.bing.net/th?id=OIP.NGgaGFv5pJ8XBP18yrpYjAHaE8&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://tse3.mm.bing.net/th?id=OIP.3g7gvlQNNKdobfoY0MeNrgHaE8&pid=Api&P=0&h=180" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right_sub__div d-flex justify-content-around">
+                                    <a href="https://www.facebook.com/saswata.banerjee.393/"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="https://www.instagram.com/saswata.banerjee.393/" target="_thapa"> <i class="fab fa-3x fa-instagram"></i></a>
+                                    <a href="https://github.com/saswata35"> <i class="fab fa-3x fa-github-square"></i> </a>
+                                    <a href="https://x.com/Saswata15146833"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                                    <a href="https://www.youtube.com/@saswatabanerjee5571"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                                    <a href="https://www.linkedin.com/in/saswata-banerjee-a42386200/"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <h2>Subscribe</h2>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <button id="subscribeButton" onclick="handleSubscribe()">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center py-5 bg-light">design with love By ©Saswata-Blog-Life</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('reply_count_1').textContent = 0; // Example for reply1
+        document.getElementById('reply_count_2').textContent = 0; // Example for reply2
+        document.getElementById('reply_count_3').textContent = 0; // Example for reply3 (no initial comments)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
